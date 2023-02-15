@@ -3,8 +3,8 @@
     border-radius: 20px;
     width: 400px;
     height: 300px;
-    background-color: blue;
-    color: antiquewhite;
+    background-color: #B3005E;
+    color: #537FE7;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -16,4 +16,7 @@
 .item-list2{
     left: 800px;
 
+}
+.para{
+    color:red;
 }

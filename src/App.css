@@ -6,7 +6,27 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body{
+  background-color: #060047;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  margin: 40px 200px;
+  width: 24rem;
+  height: 4rem;
+  position: absolute;
+  top: 20px;
+  left:5rem;
+  padding: 10px;
+ border-radius: 10px;
+}
+.btn-2{
+  left:52rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
