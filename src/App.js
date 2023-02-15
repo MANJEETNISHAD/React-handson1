@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Manjeet from './Component/Class'
+import Function from './Component/Function'
 
-function App() {
+
+
+const App = () => {
+  const[onClick,setOnClick]=useState(false);
+  const[onClickClass,setOnClickClass]=useState(false);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div>
+     <button onClick={()=>setOnClick(!onClick)}>To see styling in Function Component</button>
+     {onClick&&<Function/>}
+     <button onClick={()=>setOnClickClass(!onClickClass)}> To see styling in  Class Component</button>
+     {onClickClass&&<Manjeet/>}
+  </div>
+  )
 }
 
-export default App;
+export default App
